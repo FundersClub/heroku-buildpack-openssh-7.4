@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+mkdir -p "$1/oldssh/"
+tar -C "$1/oldssh/" -xvf "bin/old.tgz"
+echo "-----> oldssh-buildpack: Installed to $1/oldssh/"
+exit 0
